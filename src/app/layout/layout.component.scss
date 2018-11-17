@@ -1,8 +1,13 @@
 @import '../styles/variables';
 
 .wrapper {
-  border: 35px solid white;
+  border-top: 25px solid white;
+  border-left: 35px solid white;
+  border-right: 35px solid white;
+  border-bottom: 25px solid white;
   color: $mvp-text;
   background-color: $mvp-base;
   font-family: 'Helvetica-CondensedBold';
+  height: inherit;
+  width: inherit;
 }
