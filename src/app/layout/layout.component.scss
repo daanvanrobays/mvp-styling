@@ -1,0 +1,8 @@
+@import '../styles/variables';
+
+.wrapper {
+  border: 35px solid white;
+  color: $mvp-text;
+  background-color: $mvp-base;
+  font-family: 'Helvetica-CondensedBold';
+}
