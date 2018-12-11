@@ -1,5 +1,36 @@
 @import '../../styles/variables';
 
-h4:hover {
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $mvp-base;
+  text-align: left;
+  z-index: 200;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: $mvp-text;
+  margin-left: 60px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: $mvp-touch;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover h4 {
   color: $mvp-touch;
 }

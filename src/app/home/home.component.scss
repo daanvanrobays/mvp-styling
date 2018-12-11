@@ -3,7 +3,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 5000;
+  z-index: 100;
+  text-align: center;
 }
 
 .col-centered {
@@ -13,6 +14,10 @@
 
 .main {
   font-family: 'Britannic-BoldRegular' !important;
-  font-size: 255px;
+  font-size: 13.750em;
   font-weight: bold;
+}
+
+.second {
+  margin-top: -50px !important;
 }

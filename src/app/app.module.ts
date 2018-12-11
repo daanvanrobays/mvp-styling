@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module'
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { LayoutModule } from './layout/layout.module'
     BrowserModule,
     AppRoutingModule,
     LayoutModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
