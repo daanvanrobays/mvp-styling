@@ -1,0 +1,44 @@
+.side-text-left {
+  position: fixed;
+  top: 50%;
+  left: 1%;
+  z-index: 100;
+  text-align: center;
+  font-size: 32px;
+  margin-left: -20px;
+
+}
+
+.side-text-right {
+  position: fixed;
+  top: 50%;
+  right: 1%;
+  z-index: 100;
+  text-align: center;
+  font-family: 'Britannic-BoldRegular' !important;
+  font-size: 64px;
+  margin-right: -100px;
+
+}
+
+.vertical-left {
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+}
+
+.vertical-right {
+  /* Safari */
+  -webkit-transform: rotate(90deg);
+  /* Firefox */
+  -moz-transform: rotate(90deg);
+  /* IE */
+  -ms-transform: rotate(90deg);
+  /* Opera */
+  -o-transform: rotate(90deg);
+}

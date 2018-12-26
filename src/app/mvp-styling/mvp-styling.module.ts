@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { VideoComponent } from './video/video.component';
+import { SideTextComponent } from '../shared/side/side-text.component';
 
 const routes: Routes = [
   { path: 'video', component: VideoComponent }
@@ -17,7 +18,8 @@ const routes: Routes = [
         NgbModule
     ],
     declarations: [
-      VideoComponent
+      VideoComponent,
+      SideTextComponent
     ],
     exports: [
       RouterModule
