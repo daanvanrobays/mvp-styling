@@ -24,7 +24,7 @@
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {
+.dropdown-content a:hover, .header-link a:hover {
   color: $mvp-touch;
 }
 
@@ -32,5 +32,22 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover h4 {
+  color: $mvp-touch;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.header-link {
+  background-color: $mvp-base;
+  z-index: 200;
+}
+
+/* Links inside the dropdown */
+.header-link a {
+  color: $mvp-text;
+  text-decoration: none;
+  display: block;
+}
+
+.active h4 {
   color: $mvp-touch;
 }

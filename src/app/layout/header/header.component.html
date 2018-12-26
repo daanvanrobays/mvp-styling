@@ -5,19 +5,19 @@
 
   <div class="collapse navbar-collapse text-center m-3" id="navbarSupportedContent">
     <div class="col">
-      <div class="dropdown">
+      <div class="dropdown" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
         <h4 class="dropbtn">
           MVP STYLING
         </h4>
         <div class="dropdown-content">
-          <a routerLink="/mvp-styling/video">Video</a>
-          <a href="#">Editorial</a>
-          <a href="#">Published</a>
+          <a [routerLink]="['/mvp-styling/video']">Video</a>
+          <a [routerLink]="['/mvp-styling/editorial']">Editorial</a>
+          <a [routerLink]="['/mvp-styling/published']">Published</a>
         </div>
       </div>
     </div>
     <div class="col">
-      <div class="dropdown">
+      <div class="dropdown" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
         <h4 class="dropbtn">
           FASHION BRANDING
         </h4>
@@ -29,7 +29,7 @@
       </div>
     </div>
     <div class="col">
-      <div class="dropdown">
+      <div class="dropdown" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
         <h4 class="dropbtn">
           SPECIAL PROJECTS
         </h4>
@@ -42,9 +42,11 @@
       </div>
     </div>
     <div class="col">
-      <h4>
-        ABOUT
+      <h4 class="header-link" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+        <a [routerLink]="['/home']">
+          ABOUT
+        </a>
       </h4>
     </div>
-</div>
+  </div>
 </nav>

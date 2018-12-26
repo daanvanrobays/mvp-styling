@@ -4,11 +4,15 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { VideoComponent } from './video/video.component';
 import { SideTextComponent } from '../shared/side/side-text.component';
+import { VideoComponent } from './video/video.component';
+import { EditorialComponent } from './editorial/editorial.component';
+import { PublishedComponent } from './published/published.component';
 
 const routes: Routes = [
-  { path: 'video', component: VideoComponent }
+  { path: 'video', component: VideoComponent },
+  { path: 'editorial', component: EditorialComponent },
+  { path: 'published', component: PublishedComponent }
 ];
 
 @NgModule({
@@ -19,7 +23,9 @@ const routes: Routes = [
     ],
     declarations: [
       VideoComponent,
-      SideTextComponent
+      SideTextComponent,
+      EditorialComponent,
+      PublishedComponent
     ],
     exports: [
       RouterModule
