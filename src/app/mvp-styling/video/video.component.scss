@@ -1,1 +1,14 @@
+@import '../../styles/variables';
 
+.youtube-embed {
+  height: 43.75em;
+  width: 100%;
+}
+
+.video-container {
+  margin-bottom: 40px;
+}
+
+.video-container span {
+  color: $mvp-touch;
+}

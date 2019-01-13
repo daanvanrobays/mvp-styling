@@ -10,7 +10,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: $mvp-base;
+  background-color: transparent;
   text-align: left;
   z-index: 200;
 }
@@ -50,4 +50,8 @@
 
 .active h4 {
   color: $mvp-touch;
+}
+
+.navbar {
+  margin-bottom: 60px;
 }

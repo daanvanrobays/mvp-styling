@@ -1,13 +1,37 @@
 @import '../styles/variables';
 
+body {
+  background-color: $white;
+}
+
 .wrapper {
-  border-top: 25px solid white;
-  border-left: 35px solid white;
-  border-right: 35px solid white;
-  border-bottom: 25px solid white;
+  position:absolute;
+  top: 25px;
+  right: 35px;
+  bottom: 25px;
+  left: 35px;
   color: $mvp-text;
   background-color: $mvp-base;
   font-family: 'Helvetica-CondensedBold';
-  height: inherit;
-  width: inherit;
+  overflow-y: auto;
+}
+
+.wrapper::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: $white;
+}
+
+.wrapper::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: $mvp-base;
+}
+
+.wrapper::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: $mvp-base;
 }
