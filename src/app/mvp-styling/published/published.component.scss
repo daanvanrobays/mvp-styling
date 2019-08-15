@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+div.imagetiles div.col-lg-4.col-md-4.col-sm-4.col-xs-4 {
+  padding: 3px;
+}
+
+h4.title {
+  margin-top:30px;
+  margin-bottom: 0;
+}
+h5.magazine {
+  color: $mvp-touch;
+  font-family: 'Britannic-BoldRegular' !important;
+}

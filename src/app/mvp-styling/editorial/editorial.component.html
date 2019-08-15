@@ -1,11 +1,42 @@
 <side-text [left]="'EDITORIAL'" ></side-text>
-<div class="container">
-  <div class="row imagetiles">
+<div class="container h-100 text-center">
+  <div class="row imagetiles h-100">
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-      <img src="../../../assets/images/editorial/1_Taboo-Hoofdfoto-a.jpg" class="img-fluid"/>
+      <a>
+        <img src="/assets/images/editorial/taboo-hoofdfoto-a.jpg" class="img-fluid"/>
+        <h4>Taboo</h4>
+      </a>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-      <img src="../../../assets/images/editorial/1_Taboo-hoofdfoto-b.jpg" class="img-fluid" />
+      <a>
+        <img src="/assets/images/editorial/taboo-hoofdfoto-b.jpg" class="img-fluid second" />
+        <h4>Taboo</h4>
+      </a>
+    </div>
+  </div>
+  <div class="row imagetiles h-100">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <a [routerLink]="['/mvp-styling/editorial/twoofakind']">
+        <img src="/assets/images/editorial/twoofakind-hoofdfoto.jpg" class="img-fluid"/>
+        <h4>Two Of a Kind</h4>
+      </a>
+    </div>
+  </div>
+  <div class="row imagetiles h-100">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <a>
+        <img src="/assets/images/editorial/enrose-hoofdfoto.jpg" class="img-fluid"/>
+        <h4>22.3 En Rose</h4>
+      </a>
+    </div>
+  </div>
+  <div class="row imagetiles h-100">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <a [routerLink]="['/mvp-styling/editorial/FFFFFF']">
+        <img src="/assets/images/editorial/white-hoofdfoto-a.jpg" class="img-fluid"/>
+        <img src="/assets/images/editorial/white-hoofdfoto-b.jpg" class="img-fluid" />
+        <h4>FFFFFF</h4>
+      </a>
     </div>
   </div>
 </div>

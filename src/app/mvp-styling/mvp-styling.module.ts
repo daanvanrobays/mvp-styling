@@ -8,10 +8,14 @@ import { SideTextComponent } from '../shared/side/side-text.component';
 import { VideoComponent } from './video/video.component';
 import { EditorialComponent } from './editorial/editorial.component';
 import { PublishedComponent } from './published/published.component';
+import { TwoOfAKindComponent } from './editorial/twoofakind/twoofakind.component';
+import { FFFFFFComponent } from './editorial/ffffff/ffffff.component';
 
 const routes: Routes = [
   { path: 'video', component: VideoComponent },
   { path: 'editorial', component: EditorialComponent },
+  { path: 'editorial/twoofakind', component: TwoOfAKindComponent },
+  { path: 'editorial/FFFFFF', component: FFFFFFComponent },
   { path: 'published', component: PublishedComponent }
 ];
 
@@ -25,7 +29,9 @@ const routes: Routes = [
       VideoComponent,
       SideTextComponent,
       EditorialComponent,
-      PublishedComponent
+      PublishedComponent,
+      TwoOfAKindComponent,
+      FFFFFFComponent
     ],
     exports: [
       RouterModule
