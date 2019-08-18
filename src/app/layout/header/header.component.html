@@ -23,8 +23,8 @@
         </h4>
         <div class="dropdown-content">
           <a [routerLink]="['/fashion-branding/concept-identity']">Concept & Identity</a>
-          <a href="#">Video</a>
-          <a href="#">Strategy</a>
+          <a [routerLink]="['/fashion-branding/video']">Video</a>
+          <a [routerLink]="['/fashion-branding/strategy']">Strategy</a>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
     </div>
     <div class="col">
       <h4 class="header-link" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
-        <a [routerLink]="['/home']">
+        <a [routerLink]="['/about']">
           ABOUT
         </a>
       </h4>

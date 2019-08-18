@@ -3,8 +3,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SharedModule } from '../shared/shared.module';
 
-import { SideTextComponent } from '../shared/side/side-text.component';
+//components
 import { VideoComponent } from './video/video.component';
 import { EditorialComponent } from './editorial/editorial.component';
 import { PublishedComponent } from './published/published.component';
@@ -23,11 +24,11 @@ const routes: Routes = [
     imports: [
         CommonModule,
         RouterModule.forChild(routes),
-        NgbModule
+        NgbModule,
+        SharedModule
     ],
     declarations: [
       VideoComponent,
-      SideTextComponent,
       EditorialComponent,
       PublishedComponent,
       TwoOfAKindComponent,

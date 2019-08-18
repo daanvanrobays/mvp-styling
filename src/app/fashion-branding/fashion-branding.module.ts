@@ -3,23 +3,30 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SharedModule } from '../shared/shared.module';
 
-import { SideTextComponent } from '../shared/side/side-text.component';
+//components
 import { ConceptComponent } from './concept/concept.component';
+import { StrategyComponent } from './strategy/strategy.component';
+import { VideoComponent } from './video/video.component';
 
 const routes: Routes = [
   { path: 'concept-identity', component: ConceptComponent },
+  { path: 'strategy', component: StrategyComponent },
+  { path: 'video', component: VideoComponent }
 ];
 
 @NgModule({
     imports: [
         CommonModule,
         RouterModule.forChild(routes),
-        NgbModule
+        NgbModule,
+        SharedModule
     ],
     declarations: [
-      SideTextComponent,
-      ConceptComponent
+      ConceptComponent,
+      StrategyComponent,
+      VideoComponent
     ],
     exports: [
       RouterModule
