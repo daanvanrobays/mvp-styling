@@ -6,7 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SharedModule } from '../shared/shared.module';
 
 //components
-import { AboutComponent } from 'about.component';
+import { AboutComponent } from './about.component';
 
 const routes: Routes = [
   { path: '', component: AboutComponent },

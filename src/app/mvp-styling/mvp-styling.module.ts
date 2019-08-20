@@ -6,7 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SharedModule } from '../shared/shared.module';
 
 //components
-import { VideoComponent } from './video/video.component';
+import { VideoComponent, SafePipe } from './video/video.component';
 import { EditorialComponent } from './editorial/editorial.component';
 import { PublishedComponent } from './published/published.component';
 import { TwoOfAKindComponent } from './editorial/twoofakind/twoofakind.component';
@@ -28,6 +28,7 @@ const routes: Routes = [
         SharedModule
     ],
     declarations: [
+      SafePipe,
       VideoComponent,
       EditorialComponent,
       PublishedComponent,
