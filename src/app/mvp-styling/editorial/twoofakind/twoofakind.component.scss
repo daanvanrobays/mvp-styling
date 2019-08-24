@@ -1,5 +1,14 @@
-div.imagetiles div.col-lg-6.col-md-6.col-sm-6.col-xs-6, div.imagetiles div.col-lg-12.col-md-12.col-sm-12.col-xs-12 {
-  padding: 0px;
+div.imagetiles div.col-lg-12.col-md-12.col-sm-12.col-xs-12 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+div.imagetiles div.col-lg-6.col-md-6.col-sm-6.col-xs-6.right {
+  padding-right: 0px;
+}
+
+div.imagetiles div.col-lg-6.col-md-6.col-sm-6.col-xs-6.left {
+  padding-left: 0px;
 }
 
 .imagetiles {
