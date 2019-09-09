@@ -16,7 +16,8 @@ import { TabooComponent } from './editorial/taboo/taboo.component';
 import { FinesseComponent } from './editorial/finesse/finesse.component';
 import { GuardianComponent } from './editorial/guardian/guardian.component';
 import { EnRoseComponent } from './editorial/213enrose/en-rose.component';
-
+import { PatchesComponent } from './artists/patches/patches.component';
+import { TheColorGreyComponent } from './artists/thecolorgrey/thecolorgrey.component';
 
 const routes: Routes = [
   { path: 'artists', component: ArtistsComponent },
@@ -49,7 +50,9 @@ const routes: Routes = [
       TabooComponent,
       FinesseComponent,
       GuardianComponent,
-      EnRoseComponent
+      EnRoseComponent,
+      PatchesComponent,
+      TheColorGreyComponent
     ],
     exports: [
       RouterModule

@@ -15,7 +15,7 @@ export class SafePipe implements PipeTransform {
     styleUrls: ['./video.component.scss']
 })
 export class VideoComponent {
-  private videos: YouTubeVideo[] = [
+  public videos: YouTubeVideo[] = [
     {url: 'https://www.youtube.com/embed/rtjOdFJzuvc', name: 'Gaidaa - Morning Blue'},
     {url: 'https://www.youtube.com/embed/6czMEm2BzBQ', name: 'Bouzzy - Shock It ft. F1rstman'},
     {url: 'https://www.youtube.com/embed/ABaL0Uxtexk', name: 'TheColorGrey - Nothing At All'},
