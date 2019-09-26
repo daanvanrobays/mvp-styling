@@ -21,6 +21,8 @@ import { TheColorGreyComponent } from './artists/thecolorgrey/thecolorgrey.compo
 
 const routes: Routes = [
   { path: 'artists', component: ArtistsComponent },
+  { path: 'artists/thecolorgrey', component: TheColorGreyComponent },
+  { path: 'artists/patches', component: PatchesComponent },
   { path: 'video', component: VideoComponent },
   { path: 'editorial', component: EditorialComponent },
   { path: 'editorial/taboo', component: TabooComponent },
