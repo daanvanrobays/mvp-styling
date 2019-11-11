@@ -6,9 +6,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SharedModule } from '../shared/shared.module';
 
 //components
+import { BelmodoComponent } from './belmodo/belmodo.component';
+import { AmfiFashionShowComponent } from './amfifashionshow/amfi-fashion-show.component';
+import { VisualCultureComponent } from './visual/visual-culture.component';
 
 const routes: Routes = [
+  { path: 'belmodo', component: BelmodoComponent },
+  { path: 'amfi-fashion-show', component: AmfiFashionShowComponent },
+  { path: 'visual-culture', component: VisualCultureComponent }
 ];
+
 
 @NgModule({
     imports: [
@@ -18,6 +25,9 @@ const routes: Routes = [
         SharedModule
     ],
     declarations: [
+      BelmodoComponent,
+      AmfiFashionShowComponent
+      VisualCultureComponent
     ],
     exports: [
       RouterModule
