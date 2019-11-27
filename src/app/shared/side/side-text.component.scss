@@ -1,11 +1,12 @@
 .side-text-left {
   position: fixed;
-  top: 50%;
+  top: 40%;
   left: 1%;
   z-index: 100;
-  text-align: center;
   font-size: 2em;
-  margin-left: -20px;
+  writing-mode: vertical-rl;
+  text-align: center;
+  transform:rotate(180deg);
 }
 
 .side-text-right {
@@ -17,17 +18,6 @@
   font-family: 'Britannic-BoldRegular' !important;
   font-size: 4em;
   margin-right: -100px;
-}
-
-.vertical-left {
-  /* Safari */
-  -webkit-transform: rotate(-90deg);
-  /* Firefox */
-  -moz-transform: rotate(-90deg);
-  /* IE */
-  -ms-transform: rotate(-90deg);
-  /* Opera */
-  -o-transform: rotate(-90deg);
 }
 
 .vertical-right {

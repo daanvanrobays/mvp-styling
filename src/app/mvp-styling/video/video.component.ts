@@ -14,15 +14,19 @@ export class SafePipe implements PipeTransform {
     templateUrl: './video.component.html',
     styleUrls: ['./video.component.scss']
 })
-export class VideoComponent {
-  public videos: YouTubeVideo[] = [
-    {url: 'https://www.youtube.com/embed/rtjOdFJzuvc', name: 'Gaidaa - Morning Blue'},
-    {url: 'https://www.youtube.com/embed/6czMEm2BzBQ', name: 'Bouzzy - Shock It ft. F1rstman'},
-    {url: 'https://www.youtube.com/embed/ABaL0Uxtexk', name: 'TheColorGrey - Nothing At All'},
-    {url: 'https://www.youtube.com/embed/M6FioGxassE', name: 'Chaz & Djalu - Bella Donna'},
-    {url: 'https://www.youtube.com/embed/x3FFuHZ3JCw', name: 'Surafeal - Ulysse'},
-    {url: 'https://www.youtube.com/embed/HZWgBseLPeY', name: 'TheColorGrey - Swerve'}
-  ];
+export class VideoComponent implements OnInit {
+  public videos: YouTubeVideo[];
+
+  ngOnInit(): void {
+    this.videos = [
+      {url: 'https://www.youtube.com/embed/rtjOdFJzuvc', name: 'Gaidaa - Morning Blue'},
+      {url: 'https://www.youtube.com/embed/6czMEm2BzBQ', name: 'Bouzzy - Shock It ft. F1rstman'},
+      {url: 'https://www.youtube.com/embed/ABaL0Uxtexk', name: 'TheColorGrey - Nothing At All'},
+      {url: 'https://www.youtube.com/embed/M6FioGxassE', name: 'Chaz & Djalu - Bella Donna'},
+      {url: 'https://www.youtube.com/embed/x3FFuHZ3JCw', name: 'Surafeal - Ulysse'},
+      {url: 'https://www.youtube.com/embed/HZWgBseLPeY', name: 'TheColorGrey - Swerve'}
+    ];
+  }
 }
 
 export class YouTubeVideo {

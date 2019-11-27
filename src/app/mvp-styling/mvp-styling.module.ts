@@ -18,11 +18,13 @@ import { GuardianComponent } from './editorial/guardian/guardian.component';
 import { EnRoseComponent } from './editorial/213enrose/en-rose.component';
 import { PatchesComponent } from './artists/patches/patches.component';
 import { TheColorGreyComponent } from './artists/thecolorgrey/thecolorgrey.component';
+import { GaidaComponent } from './artists/gaida/gaida.component';
 
 const routes: Routes = [
   { path: 'artists', component: ArtistsComponent },
   { path: 'artists/thecolorgrey', component: TheColorGreyComponent },
   { path: 'artists/patches', component: PatchesComponent },
+  { path: 'artists/gaida', component: GaidaComponent },
   { path: 'video', component: VideoComponent },
   { path: 'editorial', component: EditorialComponent },
   { path: 'editorial/taboo', component: TabooComponent },
@@ -54,7 +56,8 @@ const routes: Routes = [
       GuardianComponent,
       EnRoseComponent,
       PatchesComponent,
-      TheColorGreyComponent
+      TheColorGreyComponent,
+      GaidaComponent
     ],
     exports: [
       RouterModule

@@ -10,3 +10,13 @@
   font-family: Britannic-BoldRegular;
   src: url(assets/font/Britannic-Bold-Regular.ttf) format('truetype');
 }
+
+.coming-soon {
+  position: fixed; /* 4. Add this. */
+  top: 50%; /* 5. Add this. */
+  left: 48%; /* 6. Add this. */
+  transform: translate(-48%, -50%); /* 7. Add this. */
+  text-align: center; /* 8. Add this if you want the text to be centered. */
+  z-index: 100;
+  font-size: 5em;
+}
